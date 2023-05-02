@@ -6,9 +6,9 @@ services:
   golang:
     image: golang:bullseye
     container_name: golang
-    working_dir: /home/TechLabSatoru
+    working_dir: /go/src
     tty: true
     volumes:
-      - ./:/home/TechLabSatoru/
+      - ./:/go/src
     ports:
       - 18080:18080
